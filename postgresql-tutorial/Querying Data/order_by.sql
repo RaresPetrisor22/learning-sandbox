@@ -30,3 +30,4 @@ FROM
   sort_demo
 ORDER BY
   num DESC NULLS FIRST;
+
