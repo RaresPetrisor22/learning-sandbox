@@ -51,3 +51,16 @@ FROM
 WHERE
   first_name LIKE 'Bra%'
   AND last_name <> 'Motley'
+
+
+CREATE TABLE t(
+   message text
+);
+
+INSERT INTO t(message)
+VALUES('The rents are now 10% higher than last month'),
+      ('The new film will have _ in the title');
+
+
+SELECT * FROM t
+WHERE message LIKE '%10$%%' ESCAPE '$'; -- treat % after 10 as a regular character
