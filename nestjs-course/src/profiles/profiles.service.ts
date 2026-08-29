@@ -53,4 +53,9 @@ export class ProfilesService {
 
     return profile;
   }
+
+  delete(id: string) {
+    this.profiles = this.profiles.filter(profile => profile.id !== id)
+  }
+
 }
